@@ -1,1 +1,61 @@
-C
+Call back hell task
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 16 callback hell</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMCjbcUvPTk82-54iJsUKCjes1Szs3FVTl9Q&usqp=CAU"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <span id="display"></span>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+javascript:
+
+setTimeout(() => {
+document.getElementById("display").innerText = "10"; setTimeout(() => {
+ document.getElementById("display").innerText = "9";setTimeout(() => {
+      document.getElementById("display").innerText = "8";setTimeout(() => {
+    document.getElementById("display").innerText = "7";setTimeout(() => {
+      document.getElementById("display").innerText = "6";setTimeout(() => {
+   document.getElementById("display").innerText = "5";setTimeout(() => {
+     document.getElementById("display").innerText = "4"; setTimeout(() => {
+      document.getElementById("display").innerText = "3"; setTimeout(() => {
+   document.getElementById("display").innerText = "2"; setTimeout(() => {
+ document.getElementById("display").innerText = "1";setTimeout(() => {
+     document.getElementById("display").innerText = "Happy Independence";
+             }, 1000);
+        }, 2000)              }, 1000);
+       }, 1000);
+       }, 1000);
+      }, 1000);
+     }, 1000);      }, 1000);
+    }, 1000);
+  }, 1000);
+},1000);
+
+css:
+body{
+   
+    background-color: black;
+    color: aqua;
+}
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    margin: 250px;
+}
+
+
+
